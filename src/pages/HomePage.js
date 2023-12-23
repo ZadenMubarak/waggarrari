@@ -62,18 +62,18 @@ const HomePage = () => {
                         <div className=''>
                            
                             <Message
-                            className='block'
+                            className='block mb-3'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center">
                             <img alt="logo" src='https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002' width="32" /> <div>ethereum</div> </div>}
                             />
                             <Message
-                            className='block'
+                            className='block mb-3'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center"><img alt="logo" src='https://cryptologos.cc/logos/chainlink-link-logo.png?v=029' width="32" /><div>chainlink</div></div>
                             }/>
                             <Message
-                            className='block'
+                            className='block mb-3'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center"><img alt="logo" src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png' width="32" /><div>metamask</div></div>
                             }/>
