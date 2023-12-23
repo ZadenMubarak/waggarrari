@@ -1,0 +1,23 @@
+.toolBar {
+    
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background: rgba(53, 127, 89, 0.17); */
+    background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(53, 127, 89, 0.3);
+    box-shadow: 6;
+    max-width: 80%; /* Adjust the maximum width as needed */
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens with a maximum width of 768 pixels or less (typical for mobile devices) */
+    .toolBar {
+        max-width: 100%; /* Allow the toolbar to take the full width on smaller screens */
+        border-radius: 0; /* Remove border-radius on smaller screens if needed */
+    }
+}
