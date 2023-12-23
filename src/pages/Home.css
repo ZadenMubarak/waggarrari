@@ -77,6 +77,8 @@
         /* Adjust styles for smaller screens */
         width: 140vw;
         opacity: 0.1;
+        height: 100vh;
+        object-fit: cover; 
     }
 
     .full-width-image {

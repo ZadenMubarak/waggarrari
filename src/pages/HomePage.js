@@ -62,18 +62,18 @@ const HomePage = () => {
                         <div className=''>
                            
                             <Message
-                            className='block mb-3'
+                            className='block mb-3 w-full'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center">
                             <img alt="logo" src='https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002' width="32" /> <div>ethereum</div> </div>}
                             />
                             <Message
-                            className='block mb-3'
+                            className='block mb-3 w-full'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center"><img alt="logo" src='https://cryptologos.cc/logos/chainlink-link-logo.png?v=029' width="32" /><div>chainlink</div></div>
                             }/>
                             <Message
-                            className='block mb-3'
+                            className='block mb-3 w-full'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center"><img alt="logo" src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png' width="32" /><div>metamask</div></div>
                             }/>
@@ -123,7 +123,6 @@ const HomePage = () => {
                     <img src={Bull} alt='' className={`image-animation`}/>
                 </div>
             </section>
-            <div style={{height:'2px'}}></div>
             {/* style={{width:`${isMobile ? "125%":"105%"}`}} */}
             <section className='ms:w-max sm:w-full ' id='about' >
                 <div style={{ fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}` }}>
@@ -157,12 +156,9 @@ const HomePage = () => {
                 </div>
             </section>
     
-            <div style={{height:'2px'}}></div>
-    
-
             <Element name="how-to-buy">
                 <section className='ms:w-full sm:w-full' >
-                    <div style={{ background: 'linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%)', width:`${isMobile ? "125%":"105%"}`}}>
+                    <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', width:`${isMobile ? "125%":"105%"}`}}>
                     <div>
                         <div className={`flex align-items-center justify-content-center ${isMobile ? 'text-2xl' : 'text-4xl'} font-bold mb-1 text-white`}>
                         How to buy $WAGGARARI
@@ -252,10 +248,7 @@ const HomePage = () => {
                     </div>
                 </section>
             </Element>
-    
-            <div style={{height:'2px'}}></div>
 
-            
             <section className='ms:w-full sm:w-full' style={{background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', }} id='roadmap'>
                 <div
                 className={`flexflex flex-row flex-wrap gap-${isMobile ? '2' : '3'} ` }
@@ -284,10 +277,8 @@ const HomePage = () => {
                 </div>
             </section>
 
-            <div style={{height:'2px'}}></div>
-            
             <section className='ms:w-full sm:w-full' id='tokenomics'>
-                <div style={{ background: 'linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}` }}>
+                <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}` }}>
                 <div className="flex align-items-center justify-content-center">
                     <span className={`block text-${isMobile ? '4xl' : '5xl'} font-bold mb-1 text-white`}>TOKENOMICS</span>
                 </div>
@@ -303,10 +294,10 @@ const HomePage = () => {
             </section>
 
             <section className='ms:w-full sm:w-full' id='disclaimer'>
-                <div style={{background: 'linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}`}}>
+                <div style={{background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}`}}>
                     <div>                 
                         <div className='flex align-items-center justify-content-center'>
-                            <span className="block text-4xl font-bold mb-1 text-red-700">Disclaimer !</span>
+                            <span className="block text-4xl font-bold mb-1 text-green-700">Disclaimer !</span>
                         </div>
     
                         <div className="flex align-items-center justify-content-center">
