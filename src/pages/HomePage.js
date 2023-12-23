@@ -59,19 +59,23 @@ const HomePage = () => {
                 <div className='flex align-items-center justify-content-center gap-4'>
                     { isMobile && (
 
-                        <div className='flex align-items-center justify-content-center gap-4'>
+                        <div className=''>
+                           
                             <Message
+                            className='block'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
                             content={<div className="flex align-items-center">
-                            <img alt="logo" src='https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002' width="32" /></div>}
+                            <img alt="logo" src='https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002' width="32" /> <div>ethereum</div> </div>}
                             />
                             <Message
+                            className='block'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
-                            content={<div className="flex align-items-center"><img alt="logo" src='https://cryptologos.cc/logos/chainlink-link-logo.png?v=029' width="32" /></div>
+                            content={<div className="flex align-items-center"><img alt="logo" src='https://cryptologos.cc/logos/chainlink-link-logo.png?v=029' width="32" /><div>chainlink</div></div>
                             }/>
                             <Message
+                            className='block'
                             style={{border: 'solid #696cff',borderWidth: '0 0 0 6px',color: '#696cff'}}
-                            content={<div className="flex align-items-center"><img alt="logo" src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png' width="32" /></div>
+                            content={<div className="flex align-items-center"><img alt="logo" src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MetaMask_Fox.svg/512px-MetaMask_Fox.svg.png' width="32" /><div>metamask</div></div>
                             }/>
                         </div>
                     )}
