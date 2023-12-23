@@ -1,0 +1,101 @@
+
+.image-animation {
+    position: absolute;
+    top: 12%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    height: 160px; 
+    width: 200px; 
+    animation: moveImage 5s linear infinite;
+}
+
+.background-image {
+    position: relative;
+    width: 105vh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image .BackGround-image {
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: -10%;
+    opacity: 0.2;
+    z-index: -1;
+    width: 125vw;
+    height: 100vh;
+    object-fit: cover; 
+}
+
+.background-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 100%;
+    background:transparent
+}
+
+.full-width-image {
+    width: 100%;
+    height: 200px;
+    z-index: -1;
+  }
+.image-container {
+    position: relative;
+    width: 130vw;
+    height: 160px; 
+}
+
+@keyframes moveImage {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(180%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-animation {
+        /* Adjust styles for smaller screens */
+        top: 8%;
+        left: 50%;
+        height: 120px;
+        width: 150px;
+    }
+
+    .background-image {
+        /* Adjust styles for smaller screens */
+        height: 90vh;
+        width: 125%;
+    }
+
+    .background-image .BackGround-image {
+        /* Adjust styles for smaller screens */
+        width: 140vw;
+        opacity: 0.1;
+    }
+
+    .full-width-image {
+        /* Adjust styles for smaller screens */
+        height: 150px;
+    }
+
+    .image-container {
+        /* Adjust styles for smaller screens */
+        height: 120px;
+    }
+
+    @keyframes moveImage {
+        /* Adjust keyframe styles for smaller screens */
+        0% {
+            transform: translateX(-200%);
+        }
+        100% {
+            transform: translateX(120%);
+        }
+    }
+}
