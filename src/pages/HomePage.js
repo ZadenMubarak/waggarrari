@@ -114,11 +114,11 @@ const HomePage = () => {
                     )}
 
                 </div>
-                <img src={Bull} alt='' className='BackGround-image' />
+                    <img src={Bull} alt='' className='BackGround-image' />
                 </div>
 
                 <div className={`image-container`} style={{ background: `url(${empty})`, width:`${isMobile ? "125%":"100%"}`}}>
-                    <img src={Bull} alt='' className={`image-animation`}/>
+                    <img src={Bull} alt='' className={`image-animation`} />
                 </div>
             </section>
 
@@ -157,7 +157,7 @@ const HomePage = () => {
     
             <Element name="how-to-buy">
                 <section className='ms:w-full sm:w-full' >
-                    <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', width:`${isMobile ? "125%":"100%"}`, fontFamily: 'Silkscreen, serif'}}>
+                    <div style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', width:`${isMobile ? "125%":"100%"}`, fontFamily: 'Silkscreen, serif'}}>
                     <div>
                         <div className={`flex align-items-center justify-content-center ${isMobile ? 'text-2xl' : 'text-4xl'} font-bold mb-1 text-white`}>
                         How to buy $WAGGARARI
@@ -269,7 +269,7 @@ const HomePage = () => {
                         <Card
                             title={item.status}
                             className={`w-${isMobile ? '23' : '14'}rem h-${isMobile ? '10' : '20'}rem`}
-                            style={{ background: 'radial-gradient(759px at 14% 22.3%, rgb(10, 64, 88) 0%, rgb(15, 164, 102) 90%)', color: 'whitesmoke' ,fontFamily: 'Silkscreen, serif' }}
+                            style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', color: 'whitesmoke' ,fontFamily: 'Silkscreen, serif' }}
                         >
                             <p style={{ fontFamily: 'Silkscreen, serif' }}>{item.details}</p>
                         </Card>
@@ -281,7 +281,7 @@ const HomePage = () => {
             </section>
 
             <section className='ms:w-full sm:w-full' id='tokenomics'>
-                <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>
+                <div style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>
                 <div className="flex align-items-center justify-content-center">
                     <span className={`block text-${isMobile ? '4xl' : '5xl'} font-bold mb-1 text-white`}>TOKENOMICS</span>
                 </div>
@@ -304,7 +304,7 @@ const HomePage = () => {
                         </div>
     
                         <div className="flex align-items-center justify-content-center">
-                            <p className='block font-bold mb-1 text-white'>$WAGGARARI is a meme coin with no intrinsic value or expectation of financial return</p>
+                            <p className='block font-bold mb-1 text-white text-sm'>$WAGGARARI is a meme coin with no intrinsic value or expectation of financial return</p>
                         </div>
                         <div className="flex align-items-center justify-content-center">
                             <p className='block font-bold mb-1 text-white'>The coin is completely useless and for entertainment purposes only.</p>

@@ -70,7 +70,7 @@
     .background-image {
         /* Adjust styles for smaller screens */
         height: 95vh;
-        width: 125%;
+        width: 135%;
     }
 
     .background-image .BackGround-image {
@@ -79,8 +79,8 @@
         padding: 0%;
         position: absolute;
         top: -10%;
-        left: -30px;
-        width: 108%;
+        left: 0px;
+        width: 100%;
         opacity: 0.1;
         height: 100vh;
         object-fit: cover; 
