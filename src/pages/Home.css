@@ -70,7 +70,7 @@
     .background-image {
         /* Adjust styles for smaller screens */
         height: 95vh;
-        width: 125%;
+        width: 130%;
     }
 
     .background-image .BackGround-image {
@@ -94,6 +94,7 @@
     .image-container {
         /* Adjust styles for smaller screens */
         height: 120px;
+        width: 130%;
     }
 
     @keyframes moveImage {

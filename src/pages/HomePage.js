@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import { TwitterShareButton, TwitterTweetEmbed } from 'react-twitter-embed';
 
 import Bull from './assets/WAGGARRARI.png'
+import SmallBull from './assets/WAGGARRARI-small.png'
 import empty from './assets/emptytrack.jpeg'
 import './Home.css'
 
@@ -35,7 +36,7 @@ const HomePage = () => {
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Broken+Fax"></link>
 
             <section className='ms:w-full sm:w-full ' id='home' >
-                <div className={`background-image`} style={{ fontFamily: 'Silkscreen, serif', width:`${isMobile ? "125%":"100%"}`}}>
+                <div className={`background-image`} style={{ fontFamily: 'Silkscreen, serif', width:`${isMobile ? "130%":"100%"}`}}>
                 <div style={{ height: isMobile ? '35%' : '25%' }}></div>
                 <div className='flex align-items-center justify-content-center'>
                     <span className={`block text-${isMobile ? '2xl' : '5xl'} font-bold mb-1`}>It's the Bull ... So</span>
@@ -114,17 +115,17 @@ const HomePage = () => {
                     )}
 
                 </div>
-                    <img src={Bull} alt='' className='BackGround-image' />
+                    <img src={isMobile ? SmallBull : Bull} alt='' className='BackGround-image' />
                 </div>
 
-                <div className={`image-container`} style={{ background: `url(${empty})`, width:`${isMobile ? "125%":"100%"}`}}>
+                <div className={`image-container`} style={{ background: `url(${empty})`, width:`${isMobile ? "130%":"100%"}`}}>
                     <img src={Bull} alt='' className={`image-animation`} />
                 </div>
             </section>
 
             {/* style={{width:`${isMobile ? "125%":"105%"}`}} */}
             <section className='ms:w-max sm:w-full ' id='about' >
-                <div style={{ fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>
+                <div style={{ fontFamily:"Silkscreen, serif", width:`${isMobile ? "130%":"100%"}` }}>
                 <div className="surface-0 text-800" style={{background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)'}}>
                     <div className={`flex align-items-center justify-content-center ${isMobile ? 'text-1xl' : 'text-4xl'} font-bold mb-1 text-white`}>
                     First Wagmi then WAGGARARI!
@@ -157,7 +158,7 @@ const HomePage = () => {
     
             <Element name="how-to-buy">
                 <section className='ms:w-full sm:w-full' >
-                    <div style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', width:`${isMobile ? "125%":"100%"}`, fontFamily: 'Silkscreen, serif'}}>
+                    <div style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', width:`${isMobile ? "130%":"100%"}`, fontFamily: 'Silkscreen, serif'}}>
                     <div>
                         <div className={`flex align-items-center justify-content-center ${isMobile ? 'text-2xl' : 'text-4xl'} font-bold mb-1 text-white`}>
                         How to buy $WAGGARARI
@@ -255,7 +256,7 @@ const HomePage = () => {
             <section className='ms:w-full sm:w-full' style={{background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily: 'Silkscreen, serif'}} id='roadmap'>
                 <div
                 className={`flexflex flex-row flex-wrap gap-${isMobile ? '2' : '3'} ` }
-                style={{ background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', height: `${isMobile ? '190vh' : '140vh'}`, width:`${isMobile ? "125%":"100%"}`, height:`${isTablet && ("270vh")}` }}
+                style={{ background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', height: `${isMobile ? '190vh' : '140vh'}`, width:`${isMobile ? "130%":"100%"}`, height:`${isTablet && ("270vh")}` }}
                 >
                     
                 <div className="flex align-items-center justify-content-center">
@@ -281,7 +282,7 @@ const HomePage = () => {
             </section>
 
             <section className='ms:w-full sm:w-full' id='tokenomics'>
-                <div style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>
+                <div style={{ background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "130%":"100%"}` }}>
                 <div className="flex align-items-center justify-content-center">
                     <span className={`block text-${isMobile ? '4xl' : '5xl'} font-bold mb-1 text-white`}>TOKENOMICS</span>
                 </div>
@@ -297,7 +298,7 @@ const HomePage = () => {
             </section>
 
             <section className='ms:w-full sm:w-full' id='disclaimer'>
-                <div style={{background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}`}}>
+                <div style={{background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "130%":"100%"}`}}>
                     <div>                 
                         <div className='flex align-items-center justify-content-center'>
                             <span className="block text-4xl font-bold mb-1 text-green-700">Disclaimer !</span>
