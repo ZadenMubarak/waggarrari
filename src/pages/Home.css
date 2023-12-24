@@ -75,7 +75,11 @@
 
     .background-image .BackGround-image {
         /* Adjust styles for smaller screens */
-        width: 110vw;
+        margin: 0%;
+        padding: 0%;
+        position: absolute;
+        top: -10%;
+        width: 130vw;
         opacity: 0.1;
         height: 100vh;
         object-fit: cover; 
