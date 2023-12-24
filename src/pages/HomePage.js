@@ -27,7 +27,6 @@ const HomePage = () => {
         { status: 'Phase: 2', date: '15/10/2020 14:00', icon: 'pi pi-cog pi-spin', color: '#673AB7' , details:"50 000 CEX (centralised exchange) listing" },
         { status: 'Phase: 3', date: '15/10/2020 16:15', icon: 'pi pi-money-bill', color: '#FF9800', details:"Game drop community growth marketing"  },
         { status: 'Phase: 4', date: '16/10/2020 10:00', icon: 'pi pi-check', color: '#607D8B', details:"100 000 tier 1 listing"  },
-        { status: 'Phase: 5', date: '16/10/2020 10:00', icon: 'pi pi-send', color: '#00BCD4', details:"150 000 Ferrari Give away"  } // Change color here
     ];
 
     return (
@@ -37,7 +36,7 @@ const HomePage = () => {
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Broken+Fax"></link>
 
             <section className='ms:w-full sm:w-full ' id='home' >
-                <div className={`background-image`} style={{ fontFamily: 'Silkscreen, serif', width:`${isMobile ? "125%":"105%"}`}}>
+                <div className={`background-image`} style={{ fontFamily: 'Silkscreen, serif', width:`${isMobile ? "125%":"100%"}`}}>
                 <div style={{ height: isMobile ? '35%' : '25%' }}></div>
                 <div className='flex align-items-center justify-content-center'>
                     <span className={`block text-${isMobile ? '2xl' : '5xl'} font-bold mb-1`}>It's the Bull ... So</span>
@@ -119,13 +118,13 @@ const HomePage = () => {
                 <img src={Bull} alt='' className='BackGround-image' />
                 </div>
 
-                <div className={`image-container`} style={{ background: `url(${empty})`, width:`${isMobile ? "125%":"105%"}`}}>
+                <div className={`image-container`} style={{ background: `url(${empty})`, width:`${isMobile ? "125%":"100%"}`}}>
                     <img src={Bull} alt='' className={`image-animation`}/>
                 </div>
             </section>
             {/* style={{width:`${isMobile ? "125%":"105%"}`}} */}
             <section className='ms:w-max sm:w-full ' id='about' >
-                <div style={{ fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}` }}>
+                <div style={{ fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>
                 <div className="surface-0 text-800" style={{background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)'}}>
                     <div className={`flex align-items-center justify-content-center ${isMobile ? 'text-1xl' : 'text-4xl'} font-bold mb-1 text-white`}>
                     First Wagmi then WAGGARARI!
@@ -141,15 +140,15 @@ const HomePage = () => {
 
                     <div className="flex align-items-center justify-content-center">
                     <div className={`flex flex-row flex-wrap gap-${isMobile ? '2' : '3'} col-9`}>
-                        <Card>
+                        {/* <Card> */}
                         <TwitterTweetEmbed tweetId={'1713961718974693723'} />
-                        </Card>
-                        <Card>
+                        {/* </Card> */}
+                        {/* <Card> */}
                         <TwitterTweetEmbed tweetId={'1713098800644960694'} />
-                        </Card>
-                        <Card>
+                        {/* </Card> */}
+                        {/* <Card> */}
                         <TwitterTweetEmbed tweetId={'1713505145806278909'} />
-                        </Card>
+                        {/* </Card> */}
                     </div>
                     </div>
                 </div>
@@ -158,7 +157,7 @@ const HomePage = () => {
     
             <Element name="how-to-buy">
                 <section className='ms:w-full sm:w-full' >
-                    <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', width:`${isMobile ? "125%":"105%"}`}}>
+                    <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', width:`${isMobile ? "125%":"100%"}`, fontFamily: 'Silkscreen, serif'}}>
                     <div>
                         <div className={`flex align-items-center justify-content-center ${isMobile ? 'text-2xl' : 'text-4xl'} font-bold mb-1 text-white`}>
                         How to buy $WAGGARARI
@@ -185,6 +184,7 @@ const HomePage = () => {
                                 border: 'solid #696cff',
                                 borderWidth: '0 0 0 6px',
                                 color: '#696cff',
+                                fontFamily: 'Silkscreen, serif'
                                 }}
                                 className="border-primary w-full justify-content-start bg-primary-900 text-white"
                                 severity="info"
@@ -200,6 +200,7 @@ const HomePage = () => {
                                 border: 'solid #696cff',
                                 borderWidth: '0 0 0 6px',
                                 color: '#696cff',
+                                fontFamily: 'Silkscreen, serif'
                                 }}
                                 className="border-primary w-full justify-content-start bg-primary-900 text-white"
                                 severity="info"
@@ -215,6 +216,7 @@ const HomePage = () => {
                                 border: 'solid #696cff',
                                 borderWidth: '0 0 0 6px',
                                 color: '#696cff',
+                                fontFamily: 'Silkscreen, serif'
                                 }}
                                 className="border-primary w-full justify-content-start bg-primary-900 text-white"
                                 severity="info"
@@ -230,6 +232,7 @@ const HomePage = () => {
                                 border: 'solid #696cff',
                                 borderWidth: '0 0 0 6px',
                                 color: '#696cff',
+                                fontFamily: 'Silkscreen, serif'
                                 }}
                                 className="border-primary w-full justify-content-start bg-primary-900 text-white"
                                 severity="info"
@@ -249,10 +252,10 @@ const HomePage = () => {
                 </section>
             </Element>
 
-            <section className='ms:w-full sm:w-full' style={{background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', }} id='roadmap'>
+            <section className='ms:w-full sm:w-full' style={{background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily: 'Silkscreen, serif'}} id='roadmap'>
                 <div
                 className={`flexflex flex-row flex-wrap gap-${isMobile ? '2' : '3'} ` }
-                style={{ background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', height: `${isMobile ? '190vh' : '140vh'}`, width:`${isMobile ? "125%":"105%"}`, height:`${isTablet && ("270vh")}` }}
+                style={{ background:'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', height: `${isMobile ? '190vh' : '140vh'}`, width:`${isMobile ? "125%":"100%"}`, height:`${isTablet && ("270vh")}` }}
                 >
                     
                 <div className="flex align-items-center justify-content-center">
@@ -266,7 +269,7 @@ const HomePage = () => {
                         <Card
                             title={item.status}
                             className={`w-${isMobile ? '23' : '14'}rem h-${isMobile ? '10' : '20'}rem`}
-                            style={{ background: 'radial-gradient(759px at 14% 22.3%, rgb(10, 64, 88) 0%, rgb(15, 164, 102) 90%)', color: 'whitesmoke'  }}
+                            style={{ background: 'radial-gradient(759px at 14% 22.3%, rgb(10, 64, 88) 0%, rgb(15, 164, 102) 90%)', color: 'whitesmoke' ,fontFamily: 'Silkscreen, serif' }}
                         >
                             <p style={{ fontFamily: 'Silkscreen, serif' }}>{item.details}</p>
                         </Card>
@@ -278,7 +281,7 @@ const HomePage = () => {
             </section>
 
             <section className='ms:w-full sm:w-full' id='tokenomics'>
-                <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}` }}>
+                <div style={{ background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>
                 <div className="flex align-items-center justify-content-center">
                     <span className={`block text-${isMobile ? '4xl' : '5xl'} font-bold mb-1 text-white`}>TOKENOMICS</span>
                 </div>
@@ -294,7 +297,7 @@ const HomePage = () => {
             </section>
 
             <section className='ms:w-full sm:w-full' id='disclaimer'>
-                <div style={{background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"105%"}`}}>
+                <div style={{background: 'radial-gradient(circle at 10% 20%, rgb(221, 49, 49) 0%, rgb(119, 0, 0) 90%)', fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}`}}>
                     <div>                 
                         <div className='flex align-items-center justify-content-center'>
                             <span className="block text-4xl font-bold mb-1 text-green-700">Disclaimer !</span>
