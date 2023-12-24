@@ -30,8 +30,7 @@ const HomePage = () => {
     ];
 
     return (
-        <div >
-    
+        <div >   
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Silkscreen"></link>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik+Broken+Fax"></link>
 
@@ -122,6 +121,7 @@ const HomePage = () => {
                     <img src={Bull} alt='' className={`image-animation`}/>
                 </div>
             </section>
+
             {/* style={{width:`${isMobile ? "125%":"105%"}`}} */}
             <section className='ms:w-max sm:w-full ' id='about' >
                 <div style={{ fontFamily:"Silkscreen, serif", width:`${isMobile ? "125%":"100%"}` }}>

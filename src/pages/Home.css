@@ -23,7 +23,7 @@
     top: -10%;
     opacity: 0.2;
     z-index: -1;
-    width: 125vw;
+    width: 100vw;
     height: 100vh;
     object-fit: cover; 
 }
@@ -69,7 +69,7 @@
 
     .background-image {
         /* Adjust styles for smaller screens */
-        height: 90vh;
+        height: 95vh;
         width: 125%;
     }
 
