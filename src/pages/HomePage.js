@@ -307,7 +307,7 @@ const HomePage = () => {
                             <p className='block font-bold mb-1 text-white text-sm'>$WAGGARARI is a meme coin with no intrinsic value or expectation of financial return</p>
                         </div>
                         <div className="flex align-items-center justify-content-center">
-                            <p className='block font-bold mb-1 text-white'>The coin is completely useless and for entertainment purposes only.</p>
+                            <p className='block font-bold mb-1 text-white '>The coin is completely useless and for entertainment purposes only.</p>
                         </div>
                     </div>
                 </div>
